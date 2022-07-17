@@ -5,7 +5,6 @@ import java.util.stream.Stream;
 import de.tinycodecrank.collections.Stack;
 import de.tinycodecrank.java.lexer.Location;
 
-//TODO add hashcode and equals
 public class Root extends Group<String>
 {
 	private final Location loc;
