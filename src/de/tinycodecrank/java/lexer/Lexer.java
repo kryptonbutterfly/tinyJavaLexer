@@ -23,8 +23,8 @@ import de.tinycodecrank.java.lexer.tokens.Section;
 import de.tinycodecrank.java.lexer.tokens.StringLiteral;
 import de.tinycodecrank.java.lexer.tokens.Unspecified;
 import de.tinycodecrank.java.lexer.tokens.Whitespace;
-import de.tinycodecrank.monads.Either;
-import de.tinycodecrank.monads.Opt;
+import de.tinycodecrank.monads.either.Either;
+import de.tinycodecrank.monads.opt.Opt;
 
 public final class Lexer
 {

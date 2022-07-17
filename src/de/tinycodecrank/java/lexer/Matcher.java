@@ -4,7 +4,7 @@ import java.util.function.ToIntFunction;
 
 import de.tinycodecrank.java.lexer.StringUtils.IsStartOf;
 import de.tinycodecrank.java.lexer.tokens.Section;
-import de.tinycodecrank.monads.Either;
+import de.tinycodecrank.monads.either.Either;
 
 public record Matcher(
 	String content,

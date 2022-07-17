@@ -10,7 +10,7 @@ import de.tinycodecrank.functions.ObjIntBiPredicate;
 import de.tinycodecrank.functions.applicable.ApplicableLeft;
 import de.tinycodecrank.functions.int_.IntBiPredicate;
 import de.tinycodecrank.functions.int_.applicable.IntApplicableRight;
-import de.tinycodecrank.monads.Opt;
+import de.tinycodecrank.monads.opt.Opt;
 
 public final class StringUtils
 {
