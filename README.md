@@ -2,6 +2,9 @@
 
 An incomplete Java Lexer.
 
+Lexes String and char literals.
+Everything else might or might not work.
+
 ## Download
 
 java version | library version | Download
