@@ -6,7 +6,7 @@ An incomplete Java Lexer.
 
 java version | library version | Download
 :----------: | :-------------: | :-------
-18+          | 0.1.0           | [tinyJavaLexer.jar](https://github.com/tinycodecrank/tinyJavaLexer/releases/download/v1.0.0/tinyJavaLexer.jar)
+18+          | 0.1.0           | [tinyJavaLexer.jar](https://github.com/tinycodecrank/tinyJavaLexer/releases/download/v0.1.0/tinyJavaLexer.jar)
 
 ## Dependencies
 * [**tinySystemUtils.jar**](https://github.com/tinycodecrank/tinySystemUtils/releases/download/1.0.0/tinySystemUtils.jar)
