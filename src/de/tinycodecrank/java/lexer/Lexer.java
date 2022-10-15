@@ -23,8 +23,8 @@ import de.tinycodecrank.java.lexer.tokens.Section;
 import de.tinycodecrank.java.lexer.tokens.StringLiteral;
 import de.tinycodecrank.java.lexer.tokens.Unspecified;
 import de.tinycodecrank.java.lexer.tokens.Whitespace;
-import de.tinycodecrank.monads.either.Either;
 import de.tinycodecrank.monads.opt.Opt;
+import de.tinycodecrank.monads.sum.of2.Sum2;
 
 public final class Lexer
 {
@@ -199,7 +199,7 @@ public final class Lexer
 			});
 		}
 		
-		private record Occurence(int start, int end, Either<Function<Location, ? extends Section<?>>, BracketDef> match)
+		private record Occurence(int start, int end, Sum2<Function<Location, ? extends Section<?>>, BracketDef> match)
 		{}
 	}
 }
