@@ -1,9 +1,9 @@
-package de.tinycodecrank.java.lexer.tokens;
+package kryptonbutterfly.java.lexer.tokens;
 
 import java.util.stream.Stream;
 
-import de.tinycodecrank.collections.Stack;
-import de.tinycodecrank.java.lexer.Location;
+import kryptonbutterfly.collections.Stack;
+import kryptonbutterfly.java.lexer.Location;
 
 public class Root extends Group<String>
 {

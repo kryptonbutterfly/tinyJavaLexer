@@ -1,30 +1,30 @@
-package de.tinycodecrank.java.lexer;
+package kryptonbutterfly.java.lexer;
 
-import static de.tinycodecrank.math.utils.range.Range.*;
+import static kryptonbutterfly.math.utils.range.Range.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.function.Function;
 
-import de.tinycodecrank.collections.Stack;
-import de.tinycodecrank.java.lexer.BracketDef.BracketType;
-import de.tinycodecrank.java.lexer.StringUtils.IsStartOf;
-import de.tinycodecrank.java.lexer.tokens.BooleanLiteral;
-import de.tinycodecrank.java.lexer.tokens.Bracket;
-import de.tinycodecrank.java.lexer.tokens.CharLiteral;
-import de.tinycodecrank.java.lexer.tokens.Comment;
-import de.tinycodecrank.java.lexer.tokens.Group;
-import de.tinycodecrank.java.lexer.tokens.Keyword;
-import de.tinycodecrank.java.lexer.tokens.LineFeed;
-import de.tinycodecrank.java.lexer.tokens.Name;
-import de.tinycodecrank.java.lexer.tokens.Operator;
-import de.tinycodecrank.java.lexer.tokens.Root;
-import de.tinycodecrank.java.lexer.tokens.Section;
-import de.tinycodecrank.java.lexer.tokens.StringLiteral;
-import de.tinycodecrank.java.lexer.tokens.Unspecified;
-import de.tinycodecrank.java.lexer.tokens.Whitespace;
-import de.tinycodecrank.monads.opt.Opt;
-import de.tinycodecrank.monads.sum.of2.Sum2;
+import kryptonbutterfly.collections.Stack;
+import kryptonbutterfly.java.lexer.BracketDef.BracketType;
+import kryptonbutterfly.java.lexer.StringUtils.IsStartOf;
+import kryptonbutterfly.java.lexer.tokens.BooleanLiteral;
+import kryptonbutterfly.java.lexer.tokens.Bracket;
+import kryptonbutterfly.java.lexer.tokens.CharLiteral;
+import kryptonbutterfly.java.lexer.tokens.Comment;
+import kryptonbutterfly.java.lexer.tokens.Group;
+import kryptonbutterfly.java.lexer.tokens.Keyword;
+import kryptonbutterfly.java.lexer.tokens.LineFeed;
+import kryptonbutterfly.java.lexer.tokens.Name;
+import kryptonbutterfly.java.lexer.tokens.Operator;
+import kryptonbutterfly.java.lexer.tokens.Root;
+import kryptonbutterfly.java.lexer.tokens.Section;
+import kryptonbutterfly.java.lexer.tokens.StringLiteral;
+import kryptonbutterfly.java.lexer.tokens.Unspecified;
+import kryptonbutterfly.java.lexer.tokens.Whitespace;
+import kryptonbutterfly.monads.opt.Opt;
+import kryptonbutterfly.monads.sum.of2.Sum2;
 
 public final class Lexer
 {
@@ -110,8 +110,7 @@ public final class Lexer
 			blocks.push(root);
 			while (offset < text.length())
 			{
-				findStart().if_(next ->
-				{
+				findStart().if_(next -> {
 					final int start = next.start();
 					if (next.start() > offset)
 					{
@@ -126,8 +125,7 @@ public final class Lexer
 							closing -> closing(closing, start));
 					offset		= next.end();
 					location	= Location.calcEnd(location, text.substring(start, offset), "\n", file);
-				}).else_(() ->
-				{
+				}).else_(() -> {
 					blocks.getLast().content().add(buildFromUnspecified(text.substring(offset), location));
 					offset = text.length();
 				});
@@ -186,8 +184,7 @@ public final class Lexer
 		
 		private Opt<Occurence> findStart()
 		{
-			return StringUtils.indexOfFirst(text, offset, STARTER).flatmap(find ->
-			{
+			return StringUtils.indexOfFirst(text, offset, STARTER).flatmap(find -> {
 				final var	matcher	= Lexer.this.matcher[find.index];
 				final int	end		= matcher.end(new EndData(find.min, text, "\n", location));
 				if (end != -1)

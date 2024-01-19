@@ -1,6 +1,6 @@
-package de.tinycodecrank.java.lexer;
+package kryptonbutterfly.java.lexer;
 
-import static de.tinycodecrank.math.utils.range.Range.*;
+import static kryptonbutterfly.math.utils.range.Range.*;
 
 public class NumberUtils
 {

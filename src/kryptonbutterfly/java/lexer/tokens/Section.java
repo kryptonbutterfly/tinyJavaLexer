@@ -1,6 +1,6 @@
-package de.tinycodecrank.java.lexer.tokens;
+package kryptonbutterfly.java.lexer.tokens;
 
-import de.tinycodecrank.java.lexer.Location;
+import kryptonbutterfly.java.lexer.Location;
 
 public interface Section<V>
 {

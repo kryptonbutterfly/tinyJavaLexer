@@ -1,4 +1,4 @@
-package de.tinycodecrank.java.lexer.tokens;
+package kryptonbutterfly.java.lexer.tokens;
 
 import java.util.ArrayList;
 

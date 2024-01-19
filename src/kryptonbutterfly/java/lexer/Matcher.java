@@ -1,10 +1,10 @@
-package de.tinycodecrank.java.lexer;
+package kryptonbutterfly.java.lexer;
 
 import java.util.function.ToIntFunction;
 
-import de.tinycodecrank.java.lexer.StringUtils.IsStartOf;
-import de.tinycodecrank.java.lexer.tokens.Section;
-import de.tinycodecrank.monads.sum.of2.Sum2;
+import kryptonbutterfly.java.lexer.StringUtils.IsStartOf;
+import kryptonbutterfly.java.lexer.tokens.Section;
+import kryptonbutterfly.monads.sum.of2.Sum2;
 
 public record Matcher(
 	String content,

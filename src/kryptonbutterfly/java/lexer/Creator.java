@@ -1,4 +1,4 @@
-package de.tinycodecrank.java.lexer;
+package kryptonbutterfly.java.lexer;
 
 import java.util.function.Function;
 

@@ -1,10 +1,10 @@
-module de.tinycodecrank.JavaLexer
+module kryptonbutterfly.JavaLexer
 {
-	exports de.tinycodecrank.java.lexer;
-	exports de.tinycodecrank.java.lexer.tokens;
+	exports kryptonbutterfly.java.lexer;
+	exports kryptonbutterfly.java.lexer.tokens;
 	
-	requires de.tinycodecrank.Monads;
-	requires de.tinycodecrank.mathUtils;
-	requires transitive de.tinycodecrank.Functional;
-	requires de.tinycodecrank.Collections;
+	requires transitive kryptonbutterfly.Functional;
+	requires kryptonbutterfly.Monads;
+	requires kryptonbutterfly.mathUtils;
+	requires kryptonbutterfly.Collections;
 }

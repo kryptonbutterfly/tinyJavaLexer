@@ -1,9 +1,9 @@
-package de.tinycodecrank.java.lexer.tokens;
+package kryptonbutterfly.java.lexer.tokens;
 
-import de.tinycodecrank.java.lexer.Creator;
-import de.tinycodecrank.java.lexer.EndData;
-import de.tinycodecrank.java.lexer.Location;
-import de.tinycodecrank.java.lexer.Matcher;
+import kryptonbutterfly.java.lexer.Creator;
+import kryptonbutterfly.java.lexer.EndData;
+import kryptonbutterfly.java.lexer.Location;
+import kryptonbutterfly.java.lexer.Matcher;
 
 public class BooleanLiteral implements Section<Boolean>
 {

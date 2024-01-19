@@ -1,7 +1,7 @@
-package de.tinycodecrank.java.lexer.tokens;
+package kryptonbutterfly.java.lexer.tokens;
 
-import de.tinycodecrank.java.lexer.Keywords;
-import de.tinycodecrank.java.lexer.Location;
+import kryptonbutterfly.java.lexer.Keywords;
+import kryptonbutterfly.java.lexer.Location;
 
 public class Keyword implements Section<Keywords>
 {

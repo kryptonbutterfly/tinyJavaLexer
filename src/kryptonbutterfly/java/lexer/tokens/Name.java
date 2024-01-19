@@ -1,8 +1,8 @@
-package de.tinycodecrank.java.lexer.tokens;
+package kryptonbutterfly.java.lexer.tokens;
 
-import static de.tinycodecrank.math.utils.range.Range.*;
+import static kryptonbutterfly.math.utils.range.Range.*;
 
-import de.tinycodecrank.java.lexer.Location;
+import kryptonbutterfly.java.lexer.Location;
 
 public class Name implements Section<String>
 {

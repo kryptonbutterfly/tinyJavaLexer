@@ -1,17 +1,17 @@
-package de.tinycodecrank.java.lexer.tokens;
+package kryptonbutterfly.java.lexer.tokens;
 
 import java.util.function.ToIntFunction;
 
-import de.tinycodecrank.java.lexer.Creator;
-import de.tinycodecrank.java.lexer.EndData;
-import de.tinycodecrank.java.lexer.Location;
-import de.tinycodecrank.java.lexer.OpDef;
-import de.tinycodecrank.java.lexer.StringUtils.IsStartOf;
+import kryptonbutterfly.java.lexer.Creator;
+import kryptonbutterfly.java.lexer.EndData;
+import kryptonbutterfly.java.lexer.Location;
+import kryptonbutterfly.java.lexer.OpDef;
+import kryptonbutterfly.java.lexer.StringUtils.IsStartOf;
 
 public class Operator implements Section<OpDef>
 {
 	public static final String						DESCRIPTION	= "operator";
-	private final de.tinycodecrank.java.lexer.OpDef	value;
+	private final kryptonbutterfly.java.lexer.OpDef	value;
 	private final Location							loc;
 	
 	private Operator(OpDef value, Location loc)

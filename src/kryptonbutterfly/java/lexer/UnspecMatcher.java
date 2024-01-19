@@ -1,9 +1,9 @@
-package de.tinycodecrank.java.lexer;
+package kryptonbutterfly.java.lexer;
 
 import java.util.function.BiFunction;
 import java.util.function.Predicate;
 
-import de.tinycodecrank.java.lexer.tokens.Section;
+import kryptonbutterfly.java.lexer.tokens.Section;
 
 public class UnspecMatcher
 {

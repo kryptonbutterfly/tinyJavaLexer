@@ -1,16 +1,16 @@
-package de.tinycodecrank.java.lexer;
+package kryptonbutterfly.java.lexer;
 
-import static de.tinycodecrank.math.utils.range.Range.*;
+import static kryptonbutterfly.math.utils.range.Range.*;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.function.IntPredicate;
 
-import de.tinycodecrank.functions.ObjIntBiPredicate;
-import de.tinycodecrank.functions.applicable.ApplicableLeft;
-import de.tinycodecrank.functions.int_.IntBiPredicate;
-import de.tinycodecrank.functions.int_.applicable.IntApplicableRight;
-import de.tinycodecrank.monads.opt.Opt;
+import kryptonbutterfly.functions.ObjIntBiPredicate;
+import kryptonbutterfly.functions.applicable.ApplicableLeft;
+import kryptonbutterfly.functions.int_.IntBiPredicate;
+import kryptonbutterfly.functions.int_.applicable.IntApplicableRight;
+import kryptonbutterfly.monads.opt.Opt;
 
 public final class StringUtils
 {

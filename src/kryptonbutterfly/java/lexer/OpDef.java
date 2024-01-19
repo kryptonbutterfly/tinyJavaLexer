@@ -1,10 +1,10 @@
-package de.tinycodecrank.java.lexer;
+package kryptonbutterfly.java.lexer;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
 
-import de.tinycodecrank.math.utils.limit.LimitInt;
+import kryptonbutterfly.math.utils.limit.LimitInt;
 
 public class OpDef implements Comparable<OpDef>
 {
