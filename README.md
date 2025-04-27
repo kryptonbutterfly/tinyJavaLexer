@@ -26,6 +26,6 @@ Anything else might or might not work.
 
 java version | library version | Download
 :----------: | :-------------: | :-------
-18+          | 1.0.1           | [**tiny_java_lexer-1.0.1.jar**](https://github.com/kryptonbutterfly/tinyJavaLexer/ releases/download/v1.0.1/tinyJavaLexer.jar)
+18+          | 1.0.1           | [**tiny_java_lexer-1.0.1.jar**](https://github.com/kryptonbutterfly/tinyJavaLexer/releases/download/v1.0.1/tiny_java_lexer-1.0.1.jar)
 18+          | 0.1.0           | [**tinyJavaLexer.jar**](https://github.com/kryptonbutterfly/tinyJavaLexer/releases/download/v0.1.0/tinyJavaLexer.jar)
 
